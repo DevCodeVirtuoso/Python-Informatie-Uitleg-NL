@@ -1,0 +1,179 @@
+# **Python: Het Complete Handboek en Cursus [NL]**
+
+**Auteur:** DevCodeVirtuoso  
+**Datum:** 8 december 2024  
+**Versie:** 1.0  
+
+---
+
+## **Inhoud**
+
+1. [Introductie](#1-introductie)  
+   1.1 Wat is Python?  
+   1.2 De geschiedenis van Python  
+   1.3 Waarom Python leren?  
+   1.4 Python versus andere programmeertalen  
+
+2. [De basisprincipes van Python](#2-de-basisprincipes-van-python)  
+   2.1 Installatie en configuratie  
+   2.2 De interactieve Python-shell gebruiken  
+   2.3 Variabelen en datatypes  
+   2.4 Werken met strings  
+
+3. [Controlestromen](#3-controlestromen)  
+   3.1 Voorwaardelijke logica (`if`, `elif`, `else`)  
+   3.2 Lussen (`for`, `while`)  
+   3.3 Break en continue  
+
+4. [Functies en modules](#4-functies-en-modules)  
+   4.1 Het definiëren van functies  
+   4.2 Parameters en retourwaarden  
+   4.3 Het gebruik van Python-modules  
+   4.4 Lambda-functies  
+
+5. [Datastructuren in Python](#5-datastructuren-in-python)  
+   5.1 Lijsten  
+   5.2 Tuples  
+   5.3 Dictionaries  
+   5.4 Sets  
+
+6. [Geavanceerde concepten](#6-geavanceerde-concepten)  
+   6.1 Objectgeoriënteerd programmeren  
+   6.2 Decorators en generatoren  
+   6.3 Asynchrone programmering  
+
+7. [Python voor data-analyse](#7-python-voor-data-analyse)  
+   7.1 Pandas  
+   7.2 NumPy  
+   7.3 Matplotlib en Seaborn  
+
+8. [Webontwikkeling met Python](#8-webontwikkeling-met-python)  
+   8.1 Introductie tot Django  
+   8.2 Werken met Flask  
+   8.3 API's bouwen met FastAPI  
+
+9. [Automatisering en scripting](#9-automatisering-en-scripting)  
+   9.1 Automatiseren van bestanden  
+   9.2 Webscraping met Beautiful Soup  
+   9.3 Gebruik van Selenium  
+
+10. [Machine learning en AI](#10-machine-learning-en-ai)  
+    10.1 Introductie tot machine learning  
+    10.2 TensorFlow en scikit-learn  
+    10.3 NLP met SpaCy  
+
+11. [Softwareontwikkeling](#11-softwareontwikkeling)  
+    11.1 Het bouwen van desktopapplicaties  
+    11.2 Versiebeheer met Git  
+    11.3 Python en DevOps  
+
+12. [Praktische projecten](#12-praktische-projecten)  
+    12.1 Beginnersprojecten  
+    12.2 Intermediaire projecten  
+    12.3 Geavanceerde projecten  
+
+---
+
+## **1. Introductie**
+
+### **1.1 Wat is Python?**
+
+Python is een veelzijdige, open-source programmeertaal die wordt gebruikt in een breed scala aan toepassingen. Python onderscheidt zich door zijn eenvoudige, leesbare syntaxis en krachtige standaardbibliotheek.
+
+Belangrijke kenmerken:
+- Dynamisch getypeerd: variabelen hoeven niet van tevoren te worden gedeclareerd.
+- Interpreteerbaar: code wordt regel voor regel uitgevoerd.
+- Cross-platform: Python werkt op Windows, macOS, Linux en zelfs mobiele apparaten.
+
+---
+
+### **1.2 Geschiedenis van Python**
+
+- **1980s:** Ontworpen door Guido van Rossum als een hobbyproject.  
+- **1991:** Eerste officiële release van Python (versie 0.9.0).  
+- **2000s:** Python 2.x bracht nieuwe functies zoals lijst-comprehensies.  
+- **2010s:** Lancering van Python 3.x met verbeterde syntaxis en Unicode-ondersteuning.  
+
+### **1.3 Waarom Python leren?**
+
+1. **Eenvoudig en krachtig:** Geschikt voor zowel beginners als experts.  
+2. **Toepasbaar in veel industrieën:** Data-analyse, AI, webontwikkeling, automatisering, enzovoort.  
+3. **Sterke community:** Duizenden online tutorials, forums en bibliotheken beschikbaar.  
+
+### **1.4 Python versus andere programmeertalen**
+
+| Kenmerk         | Python        | Java          | C++            | JavaScript   |
+|------------------|---------------|---------------|----------------|--------------|
+| Syntaxis         | Eenvoudig     | Complex       | Complex        | Eenvoudig    |
+| Toepassingen     | Breed         | Enterprise    | Games, systemen| Web          |
+| Prestatie        | Gemiddeld     | Hoog          | Hoog           | Gemiddeld    |
+
+---
+
+## **2. De basisprincipes van Python**
+
+### **2.1 Installatie en configuratie**
+
+1. **Python downloaden:** Bezoek [python.org](https://www.python.org/) om de juiste versie voor jouw besturingssysteem te downloaden.  
+2. **Editor/IDE kiezen:** Gebruik een teksteditor zoals VS Code of een IDE zoals PyCharm.  
+3. **Hello World:** Test de installatie door een simpel programma te schrijven:
+   ```python
+   print("Hallo, wereld!")
+   ```
+
+---
+
+### **2.2 Variabelen en datatypes**
+
+Python ondersteunt verschillende datatypes, waaronder:
+
+| Type       | Beschrijving         | Voorbeeld              |
+|------------|-----------------------|------------------------|
+| `int`      | Geheel getal          | `10`                  |
+| `float`    | Decimaal getal        | `3.14`                |
+| `str`      | Tekstuele gegevens    | `"Hallo"`             |
+| `bool`     | Booleaanse waarden    | `True`, `False`       |
+| `list`     | Een lijst met items   | `[1, 2, 3]`           |
+
+---
+
+### **2.3 Werken met strings**
+
+Strings in Python bieden krachtige functionaliteiten:
+```python
+naam = "Python"
+print(naam.upper())  # OUTPUT: PYTHON
+print(naam.lower())  # OUTPUT: python
+print(naam[0])       # OUTPUT: P
+```
+
+---
+
+### **3. Controlestromen**
+
+Controlestromen bepalen hoe een programma beslist of herhalingen uitvoert.
+
+#### **3.1 Voorwaardelijke logica**
+```python
+x = 10
+if x > 5:
+    print("x is groter dan 5")
+elif x == 5:
+    print("x is gelijk aan 5")
+else:
+    print("x is kleiner dan 5")
+```
+
+#### **3.2 Lussen**
+- **For-lus:**
+  ```python
+  for i in range(5):
+      print(i)
+  ```
+- **While-lus:**
+  ```python
+  while x > 0:
+      print(x)
+      x -= 1
+  ```
+
